@@ -62,10 +62,18 @@ function Cards() {
       });
   }, []);
   return (
-    <div className="p-16 flex flex-col gap-12">
+    <div className="p-16 flex flex-col gap-12 scroll-smooth sm:flex-row  sm:flex-wrap sm:justify-between lg:gap-24">
       {produtos.map((product) => (
-        <article key={product.id} className="flex flex-col gap-3">
-          <img src={product.image} alt={product.title} className="h-full" />
+        <article
+          key={product.id}
+          className="flex flex-col gap-3 sm:w-3/12 lg:w-2/12"
+        >
+          <img
+            src={product.image}
+            alt={product.title}
+            className="object-contain  m-auto"
+          />
+
           <h2>{product.title}</h2>
           <p>Valor: ${product.price}</p>
           <input
@@ -74,6 +82,7 @@ function Cards() {
             placeholder="Quantidade"
             className="rounded-xl text-center"
           />
+
           <button
             className="border-2 border-zinc-900 rounded-2xl py-2 text-lg hover:bg-black hover:text-white hover:text-lg"
             onClick={() => handleAdicionarAoCarrinho(product.id)}
@@ -83,7 +92,7 @@ function Cards() {
         </article>
       ))}
       {mostrarModal && (
-        <div className="fixed top-0 left-1/2 transform -translate-x-1/2 mt-4 border-2 border-black bg-white text-black p-4 rounded z-50">
+        <div className="fixed top-16 left-1/2 transform -translate-x-1/2 mt-4 border-2 border-black bg-white text-black p-4 rounded z-50">
           <p>Produto inserido ao carrinho!</p>
         </div>
       )}
