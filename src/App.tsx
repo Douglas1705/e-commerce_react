@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import Header from '../src/components/specific/Header';
 import Carrinho from './pages/Carrinho';
 import Home from './pages/HomePage';
+
 function App(): JSX.Element {
   return (
-    <Router>
+    <Router basename="/e-commerce_react">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
