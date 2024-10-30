@@ -4,7 +4,7 @@ Bem-vindo ao repositório do nosso site fictício de e-commerce, desenvolvido co
 
 ## Visite o Site
 
-[![Visite o Site](https://img.shields.io/badge/Visite-o%20site-blue)](http://localhost:5173/e-commerce_react/#/)
+[![Visite o Site](https://img.shields.io/badge/Visite-o%20site-blue)](https://douglas1705.github.io/e-commerce_react/)
 
 ## Tecnologias Utilizadas
 
