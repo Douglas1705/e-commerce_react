@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import ELogo from '../../assets/img/e-commerce-logo.svg';
 
 const li = 'pb-5 text-xl md:py-3.5 ';
-const aMobile =
+const linkMobile =
   'hover:border-l-2 hover:border-orange-500 hover:pl-4 md:hover:border-none md:hover:pl-0 md:hover:bg-yellow-100';
 
 function Header() {
@@ -35,14 +36,14 @@ function Header() {
       >
         <ul className="md:flex md:flex-row md:gap-5 ">
           <li className={`${li}`}>
-            <a href="/" className={aMobile}>
-              Catalogo
-            </a>
+            <Link to="/" className={linkMobile}>
+              Catálogo
+            </Link>
           </li>
           <li className={li}>
-            <a href="carrinho" className={aMobile}>
-              Carinho
-            </a>
+            <Link to="/carrinho" className={linkMobile}>
+              Carrinho
+            </Link>
           </li>
         </ul>
       </nav>
