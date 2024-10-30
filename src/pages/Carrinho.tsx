@@ -118,7 +118,7 @@ function Carrinho() {
             <button
               // eslint-disable-next-line react/jsx-no-bind
               onClick={closeModal}
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 md:w-1/12"
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 "
             >
               Fechar
             </button>
