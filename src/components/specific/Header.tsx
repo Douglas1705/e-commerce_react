@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <header className="container max-w-7xl mx-auto h-16 px-4 py-1 flex justify-between">
+    <header className="container-global h-16 px-4 py-1 flex justify-between">
       <a href="" className="w-3/6 ">
         <img src={ELogo} alt="" className="h-full" />
       </a>
@@ -26,7 +26,7 @@ function Header() {
       </button>
 
       <nav
-        className={`md:flex ${isOpen ? 'block' : 'hidden'} w-full md:w-auto md:space-x-4 absolute top-16 bg-white`}
+        className={`md:flex ${isOpen ? 'block' : 'hidden '} w-full md:w-auto md:space-x-4 absolute top-16 bg-white `}
       >
         <ul>
           <li className={liMobile}>
