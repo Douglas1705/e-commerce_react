@@ -1,11 +1,13 @@
 {
-    "homepage": "https://Douglas1705.github.io/",
+    "homepage": "https://Douglas1705.github.io/e-commerce_react",
     "name": "e-commerce",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
         "build:css": "tailwindcss -i ./src/index.css -o ./dist/assets/index.css",
         "build": "vite build && npm run build:css && tsc -b",
         "lint": "eslint .",

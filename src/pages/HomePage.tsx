@@ -1,7 +1,7 @@
 import Apresentation from '../components/specific/section/Apresentation';
 import Catalog from '../components/specific/section/Catalog';
 
-function home() {
+function HomePage() {
   return (
     <>
       <Apresentation />
@@ -10,4 +10,4 @@ function home() {
   );
 }
 
-export default home;
+export default HomePage;

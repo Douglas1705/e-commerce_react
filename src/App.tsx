@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from '../src/components/specific/Header';
 import Carrinho from './pages/Carrinho';
-import Home from './pages/home';
+import Home from './pages/HomePage';
 function App(): JSX.Element {
   return (
     <Router>
