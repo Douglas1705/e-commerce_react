@@ -1,14 +1,17 @@
-import Header from '../src/components/specific/Header';
-import Apresentation from './components/specific/section/Apresentation';
-import Catalog from './components/specific/section/Catalog';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
+import Header from '../src/components/specific/Header';
+import Carrinho from './pages/Carrinho';
+import Home from './pages/home';
 function App(): JSX.Element {
   return (
-    <>
+    <Router>
       <Header />
-      <Apresentation />
-      <Catalog />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="carrinho" element={<Carrinho />} />
+      </Routes>
+    </Router>
   );
 }
 

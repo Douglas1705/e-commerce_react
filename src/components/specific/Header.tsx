@@ -12,12 +12,12 @@ function Header() {
   };
 
   return (
-    <header className="container-global h-16 px-4 py-1 flex justify-between">
-      <a href="" className="w-3/6 ">
+    <header className="container-global h-16 py-1 flex justify-between">
+      <a href="" className="w-3/6 pl-3">
         <img src={ELogo} alt="" className="h-full" />
       </a>
 
-      <button onClick={toggleMenu} className="md:hidden block">
+      <button onClick={toggleMenu} className="md:hidden block pr-4">
         {isOpen ? (
           <XMarkIcon className="w-6 h-6" />
         ) : (
@@ -26,16 +26,16 @@ function Header() {
       </button>
 
       <nav
-        className={`md:flex ${isOpen ? 'block' : 'hidden '} w-full md:w-auto md:space-x-4 absolute top-16 bg-white `}
+        className={`md:flex ${isOpen ? 'block' : 'hidden '} w-full md:w-auto md:space-x-4 absolute top-16 bg-white pl-5`}
       >
         <ul>
           <li className={liMobile}>
-            <a href="" className={aMobile}>
+            <a href="/" className={aMobile}>
               Catalogo
             </a>
           </li>
           <li className={liMobile}>
-            <a href="" className={aMobile}>
+            <a href="carrinho" className={aMobile}>
               Carinho
             </a>
           </li>
